@@ -29,3 +29,5 @@ jobs:
         with:
           branch: gh-pages
           folder: dist/spa
+          force: true
+          single-commit: true
