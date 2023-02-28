@@ -3,8 +3,7 @@
     <div class="contain">
       <div class="row">
         <div class="logo">
-          <q-icon name="egg"></q-icon>
-          <span>友伴</span>
+          <q-img src="../assets/logo.png"></q-img>
         </div>
         <div class="col-12" style="min-height: none;">
           <div class="text-h3">註冊</div>

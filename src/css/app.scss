@@ -390,6 +390,7 @@
     position: relative;
 
     .logo {
+      width: 20%;
       position: relative;
       display: flex;
       color: teal;
@@ -415,8 +416,8 @@
 
       .q-btn {
         position: absolute;
-        right: -5%;
-        top: -4.5rem;
+        right: -3%;
+        top: -3rem;
         color: $accent;
         font-size: 1.2rem;
 
@@ -455,6 +456,7 @@
     position: relative;
 
     .logo {
+      width: 20%;
       position: relative;
       display: flex;
       color: teal;
@@ -645,8 +647,8 @@
 }
 
 #comment {
-  height: calc(100vh - 50px);
   background-color: $secondary_7 ;
+  min-height: 100vh;
 
   .title {
     text-align: center;
@@ -1877,7 +1879,7 @@
 
       .col-12:nth-child(2) {
         .q-btn {
-          top: calc(-5rem - 0.3vw)
+          top: calc(-1rem - 6vw)
         }
       }
     }
@@ -2050,7 +2052,7 @@
 
       .col-12:nth-child(2) {
         .q-btn {
-          top: calc(-5.5rem - 0.3vw)
+          top: calc(-2rem - 3vw)
         }
       }
     }
@@ -2224,7 +2226,7 @@
 
       .col-12:nth-child(2) {
         .q-btn {
-          top: calc(-6.3rem - 0.7vw);
+          top: calc(-3rem - 2vw);
         }
       }
     }
