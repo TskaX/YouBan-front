@@ -9,9 +9,9 @@
       <div class="sloganC">尋找一份簡單的陪伴</div>
     </div>
     <div id="about-us">
-      <h1>關於我們</h1>
+      <h1 data-aos="fade-down" data-aos-offset="0" data-aos-duration="1000">關於我們</h1>
       <div class="row">
-        <div class="left">
+        <div class="left" data-aos="flip-left" data-aos-offset="0"  data-aos-duration="1500">
           <q-card>
             <q-card-section>
               開創想法
@@ -35,7 +35,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="right">
+        <div class="right" data-aos="flip-right" data-aos-offset="0"  data-aos-duration="1500">
           <div class="q-pa-md">
             <q-table
               title="最新消息"
@@ -51,14 +51,14 @@
     </div>
     <div id="partner-intro">
       <div class="container">
-        <h1>夥伴介紹</h1>
+        <h1 data-aos="fade-up" data-aos-offset="0" data-aos-delay="300"  data-aos-duration="1000">夥伴介紹</h1>
         <div class="filter-btn">
-          <q-btn label="全部" @click="changeCategory('all')"></q-btn>
-          <q-btn label="運動" @click="changeCategory('sport')"></q-btn>
-          <q-btn label="遊戲" @click="changeCategory('game')"></q-btn>
-          <q-btn label="吃飯" @click="changeCategory('eat')"></q-btn>
-          <q-btn label="電影" @click="changeCategory('movie')"></q-btn>
-          <q-btn label="逛街" @click="changeCategory('shopping')"></q-btn>
+          <q-btn label="全部" @click="changeCategory('all')" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="300"  data-aos-duration="1000"></q-btn>
+          <q-btn label="運動" @click="changeCategory('sport')" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="600"  data-aos-duration="1000"></q-btn>
+          <q-btn label="遊戲" @click="changeCategory('game')" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="900"  data-aos-duration="1000"></q-btn>
+          <q-btn label="吃飯" @click="changeCategory('eat')" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1200"  data-aos-duration="1000"></q-btn>
+          <q-btn label="電影" @click="changeCategory('movie')" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1500"  data-aos-duration="1000"></q-btn>
+          <q-btn label="逛街" @click="changeCategory('shopping')" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1800"  data-aos-duration="1000"></q-btn>
         </div>
         <swiper slides-per-view="1" :spaceBetween="30" :loop="true" :navigation="true" :observer="true"  :breakpoints="{
           600: {
@@ -148,7 +148,7 @@
       </q-dialog>
     </div>
     <div id="contact-us">
-      <div class="question">
+      <div class="question" data-aos="zoom-in-up" data-aos-offset="0" data-aos-delay="300" data-aos-duration="1000">
         <h1>聯繫我們</h1>
         <q-input label="電子信箱" outlined v-model="formFeedback.email"></q-input>
         <q-input label="問題描述" outlined v-model="formFeedback.content"></q-input>
@@ -175,6 +175,8 @@ import { Pagination, Navigation } from 'swiper'
 
 import { gsap } from 'gsap'
 import { TextPlugin } from 'gsap/TextPlugin'
+import aos from 'aos'
+import 'aos/dist/aos.css'
 gsap.registerPlugin(TextPlugin)
 
 const modules = [Pagination, Navigation]
@@ -356,6 +358,7 @@ const rowsNews = reactive([]);
   rows.push(...data.result)
   news.result.reverse()
   rowsNews.push(...news.result)
+  aos.init()
 
   const sloganA = document.querySelector('.sloganA')
   const sloganB = document.querySelector('.sloganB')
