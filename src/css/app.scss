@@ -388,7 +388,7 @@
 #register {
   background-color: $secondary;
   height: 100vh;
-  padding-top: 15vh;
+  padding-top: 10vh;
 
   .contain {
     width: 90%;
@@ -445,6 +445,9 @@
 
         .q-btn {
           width: 20%;
+          &:nth-child(1) {
+            background-color: $title;
+          }
         }
       }
     }
@@ -511,6 +514,9 @@
 
         .q-btn {
           width: 20%;
+          &:nth-child(1) {
+            background-color: $title;
+          }
         }
       }
     }

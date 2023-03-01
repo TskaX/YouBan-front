@@ -21,8 +21,8 @@
             <q-input type="text" label="電話" :rules="[rules.required, rules.phoneLength]" v-model="form.phone" lazy-rules standout="bg-teal text-white"></q-input>
             <q-input type="text" label="生日 ex - 2000/01/01" v-model="form.birth" standout="bg-teal text-white"></q-input>
             <div class="btn-contain">
-              <q-btn label="註冊" type="submit" color="primary" :loading="loading" />
-              <q-btn label="重寫" type="reset" color="primary" />
+              <q-btn label="註冊" type="submit" :loading="loading" />
+              <q-btn label="重寫" type="reset" />
             </div>
           </q-form>
         </div>
