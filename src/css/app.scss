@@ -1148,7 +1148,7 @@
 }
 
 #feedback {
-  height: calc(100vh - 50px);
+  min-height: 100vh;
   background-color: $secondary_7 ;
 
   .title {

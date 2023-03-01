@@ -5,7 +5,7 @@
       <q-card class="my-card text-black col-11 col-md-5" v-for="row in rows" :key="row._id">
         <q-card-section class="feedback-main">
           <div class="feedback-avatar">
-            <q-img :src="row.p_pic"></q-img>
+            <q-img :src="row.u_pic"></q-img>
           </div>
           <div class="line"></div>
           <div class="message">
