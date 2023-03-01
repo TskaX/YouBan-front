@@ -2,7 +2,7 @@
   <div id="appointment-manage">
     <q-btn class="today add" label="當日預約" @click="openAppointment(1)"></q-btn>
     <q-btn class="done add" label="所有預約" @click="openAppointment(0)"></q-btn>
-    <q-btn class="reply-check add" label="留言紀錄" @click="openAppointment(-1)"></q-btn>
+    <q-btn class="reply-check add" label="留言管理" @click="openAppointment(-1)"></q-btn>
     <div class="q-pa-md today-appointment" >
       <q-table
         title="預約管理 - 當日預約"

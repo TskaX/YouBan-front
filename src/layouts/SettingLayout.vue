@@ -3,7 +3,8 @@
     <q-header elevated class="bg-accent">
       <q-toolbar>
         <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
-        <q-toolbar-title>會員管理</q-toolbar-title>
+        <q-toolbar-title v-if="user.partner === 0">會員管理</q-toolbar-title>
+        <q-toolbar-title v-if="user.partner === 1 || isAdmin">工作人員管理</q-toolbar-title>
         <q-btn icon="logout" @click="logout"></q-btn>
       </q-toolbar>
     </q-header>
