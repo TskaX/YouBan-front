@@ -138,7 +138,7 @@ function openDialog (id) {
   form._id = rows[index]._id
   form.name = rows[index].name
   form.email = rows[index].email
-  form.phone = rows[index].phone
+  form.phone = '0' + rows[index].phone
   form.birth = rows[index].birth
   form.dialog = true
   form.pic = rows[index].pic
