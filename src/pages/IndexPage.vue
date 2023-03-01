@@ -18,11 +18,19 @@
             </q-card-section>
             <q-card-section>
               <div class="content">
-                在這科技越來越進步的年代，明明彼此間的距離因為科技拉近了，但卻也因此更冷漠。何時起，無時無刻我們總想著盯著手上那冰冷的螢幕，缺少了眼神間的交流。是不是偶爾想找個人出門吃飯逛街的時候，總是被推三阻四的，或是因為彼此的假期無法契合而作廢。是不是偶爾想找個人抒發情緒，暢談自己滿腹的牢騷，卻找不到朋友，也不想跟家人傾訴。
+                在這科技越來越進步的年代，明明彼此間的距離因為科技拉近了，但心與心的距離卻也因此更遠了。何時起，無時無刻我們總只盯著手上那冰冷的螢幕，卻缺少了更多眼神間的交流。
               </div>
               <br>
               <div class="content">
-                「友伴」，就是在這樣的困擾中誕生了，前面所有的問題，都能靠它迎刃而解。好奇嗎？試試看就知道了！
+                是不是偶爾想找個人出門吃飯逛街的時候，總是被推三阻四的，或是因為彼此間假期無法契合而作廢。
+              </div>
+              <br>
+              <div class="content">
+                是不是偶爾遇到上班不順利被老闆責罵，還是生活上遇到甚麼不順利，想找個人暢談自己滿腹的牢騷，卻找不到朋友，也不想與家人傾訴。
+              </div>
+              <br>
+              <div class="content">
+                「友伴」，就是在這樣的困擾中誕生了。現在有太多太多可以交到新朋友的方式了，不論是聯誼還是透過社交軟件。但是有時候我們不只是身體的疲倦，心理上的倦怠也導致我們不想再做過多的社交，尋求的就只是一份安靜但卻有人陪著的感覺。如果你偶爾也有這樣的需求，來試試看就知道了！
               </div>
             </q-card-section>
           </q-card>
@@ -30,12 +38,12 @@
         <div class="right">
           <div class="q-pa-md">
             <q-table
-              title="消息發送"
+              title="最新消息"
               :rows="rowsNews"
               :columns="columns"
               row-key="_id"
-              hide-bottom
-              :pagination="initialPagination"
+              hide-pagination
+              v-model:pagination="pagination2"
             />
           </div>
         </div>
@@ -220,8 +228,9 @@ const columns = reactive([
   }
 ])
 
-const initialPagination = {
-  sortBy: 'desc',
+const pagination2 = {
+  sortBy: 'date',
+  descending: false,
   page: 1,
   rowsPerPage: 5
 }

@@ -1,6 +1,7 @@
 <template>
   <q-page id="info">
-    <div class="row justify-center items-center">
+    <div class="column justify-center items-center" style="height:90%">
+      <h1>個人資料</h1>
       <q-card class="my-card">
         <q-card-section class="main-card">
           <div class="name">{{ user.name }}</div>

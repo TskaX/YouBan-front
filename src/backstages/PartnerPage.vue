@@ -162,7 +162,7 @@ const openDialog = (idx, id) => {
     form._id = rows[index]._id
     form.name = rows[index].name
     form.email = rows[index].email
-    form.phone = rows[index].phone
+    form.phone = '0' + rows[index].phone
     form.birth = rows[index].birth
     form.pic = rows[index].pic
     form.dialog = true

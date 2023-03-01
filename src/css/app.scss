@@ -172,14 +172,15 @@
       .q-card {
         height: 100%;
         box-shadow: none;
-        border:1px solid $secondary;
+        border:1px solid $accent;
         .q-card__section {
           padding: 16px 0;
         }
         .q-card__section:nth-child(1) {
-          background-color: $secondary;
+          background-color: $accent;
           font-size: 20px;
           padding: 16px;
+          color:white
         }
         .q-card__section:nth-child(2) {
           height: 80%;
@@ -197,14 +198,23 @@
       margin: 30px auto 0;
       .q-table__card {
         box-shadow: none;
-        border:1px solid $secondary;
+        border:1px solid $accent;
         border-radius: 0;
       }
       .q-table__top {
-        background-color: $secondary;
-        color:$accent;
+        background-color: $accent;
+        color:white;
+        height: 20%;
+      }
+      .q-table--no-wrap td {
+        white-space:normal;
+      }
+      .q-table__middle {
+        height: 280px;
       }
       .q-table {
+        overflow: auto;
+        width: 100%;
         thead {
           color: $accent;
         }
@@ -277,6 +287,7 @@
 
           .q-card {
             font-size: 0;
+            transition: .5s;
             &:nth-child(1) {
               width: 300px;
             }
@@ -285,12 +296,12 @@
             }
 
             &:hover {
-              scale: 1.1;
+              scale: 1.05;
               transition: .5s;
               box-shadow:
               5px 5px 5px rgb(205,215,204),
               10px 10px 15px rgba(205,215,204,0.7);
-              transform: translateY(50px);
+              transform: translateY(10px);
             }
 
             .worker-pic {
@@ -366,7 +377,6 @@
         width: 100px;
         text-align: center;
         background-color: white;
-        margin-top: 15px;
       }
     }
   }
@@ -522,9 +532,14 @@
   display: flex;
   justify-content: center;
   background-color: $secondary_7 ;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin:0px 0 55px 0;
+  }
 
   .my-card {
-    width: 60vw;
+    width: 80vw;
     font-size: 2.5rem;
     position: relative;
 
@@ -591,7 +606,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -609,6 +624,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -620,9 +638,9 @@
 
     .pic-title {
       background-color: $title;
-
+      
       div {
-        color: white;
+        color:$accent;
         font-size: 1.3rem;
       }
     }
@@ -641,6 +659,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -727,10 +748,10 @@
 
     .appointmentForm-title {
       background-color: $title;
-
+      
       div {
+        color:$accent;
         font-size: 1.3rem;
-        color: white;
       }
       .q-btn {
         color: $accent;
@@ -751,6 +772,10 @@
 
       .q-btn {
         width: 100px;
+        color:$accent;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -848,7 +873,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -866,6 +891,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -879,7 +907,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -892,6 +920,9 @@
       .q-btn {
         width: 100px;
         margin: 0 10px ;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -973,7 +1004,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
       .q-btn {
         color: $accent;
@@ -994,6 +1025,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -1088,7 +1122,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -1099,6 +1133,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -1232,7 +1269,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -1254,6 +1291,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -1350,7 +1390,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -1381,6 +1421,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -1516,7 +1559,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -1538,6 +1581,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -1552,7 +1598,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -1563,6 +1609,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -1638,7 +1687,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -1660,6 +1709,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -1674,7 +1726,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -1685,6 +1737,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -1699,7 +1754,7 @@
 
       div {
         font-size: 1.3rem;
-        color: white;
+        color: $accent;
       }
     }
 
@@ -1721,6 +1776,9 @@
 
       .q-btn {
         width: 100px;
+        &:nth-child(1) {
+          background-color: $title;
+        }
       }
     }
   }
@@ -1900,8 +1958,8 @@
     .my-card {
       .main-card {
         .q-img {
-          width: 200px;
-          height: 200px;
+          width: 150px;
+          height: 150px;
         }
       }
     }
@@ -2024,13 +2082,13 @@
         margin-top: 40px;
       }
       .left {
-        height: 55%;
+        height: 50%;
         .q-card {
           margin-top: 30px;
         }
       }
       .right {
-        margin: 80px auto 0;
+        margin: 60px auto 0;
       }
     }
 
@@ -2174,20 +2232,25 @@
       }
       .row {
         align-items: center;
-        height: 70%;
+        height: 85%;
         .left {
           margin: auto;
           width: 40%;
+          height: 80%;
           .q-card__section:nth-child(1) {
             font-size: 1.5rem;
           }
           .content {
             font-size: 1.2rem;
           }
+          .q-card {
+            height: auto;
+          }
         }
         .right {
-          margin: 60px auto;
+          margin: 20px auto;
           width: 40%;
+          height: 75%;
           .q-table__title {
             font-size: 1.5rem;
             padding:  6px;
@@ -2197,6 +2260,9 @@
           }
           .q-table tbody td {
             font-size: 1.2rem;
+          }
+          .q-table__middle {
+            height: 405px;
           }
         }
       }
