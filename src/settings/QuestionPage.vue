@@ -118,7 +118,8 @@ const openDialog = () => {
 const submit = async () => {
   try {
     const { data } = await apiAuth.post('/questions', form)
-    rows.push(data.result)
+    rows.unshift(data.result)
+    console.log(rows)
     test()
     Swal.fire({
       icon: 'success',
@@ -146,7 +147,7 @@ const showMessage = (reply) => {
 }
 const test = () => {
   for (let i = 0; i <= rows.length - 1; i++) {
-    if (rows[i].reply === 0) {
+    if (rows[i].reply === 0 || rows[i].reply === '尚未回覆') {
       rows[i].reply = '尚未回覆'
     } else {
       rows[i].reply = '已回覆'
