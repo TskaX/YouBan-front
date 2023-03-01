@@ -117,7 +117,9 @@ const openDialog = () => {
 
 const submit = async () => {
   try {
-    await apiAuth.post('/questions', form)
+    const { data } = await apiAuth.post('/questions', form)
+    rows.push(data.result)
+    test()
     Swal.fire({
       icon: 'success',
       title: '成功',
