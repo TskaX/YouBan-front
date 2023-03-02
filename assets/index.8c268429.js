@@ -1,0 +1,1 @@
+import{p as a,u as e,r as t,c as r,A as p}from"./index.f9e4126b.js";async function i(s){s.use(a),await e().getUser(),s.use(t)}(async()=>{const s=r(p);await i(s),s.mount("#app")})();export{i as registerPlugins};
