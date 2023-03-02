@@ -358,6 +358,7 @@ const rowsNews = reactive([]);
   rows.push(...data.result)
   news.result.reverse()
   rowsNews.push(...news.result)
+  console.log(rows)
   aos.init()
 
   const sloganA = document.querySelector('.sloganA')

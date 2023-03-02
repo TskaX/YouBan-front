@@ -279,7 +279,7 @@ const submitAppointment = async (idx) => {
   const index = rows.findIndex(el => el._id === idx)
   rows[index].u_replyStatus = 1
   try {
-    await apiAuth.post('/users/replyAppointment/' + rows[index]._id, { u_reply: rows[index].u_reply, u_replyStatus: rows[index].u_replyStatus })
+    await apiAuth.post('/users/replyAppointment/' + rows[index]._id, { u_reply: rows[index].u_reply, u_replyStatus: rows[index].u_replyStatus, p_id: rows[index].p_id })
     Swal.fire({
       icon: 'success',
       title: '成功',
